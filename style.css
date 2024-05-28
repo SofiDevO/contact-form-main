@@ -18,3 +18,75 @@
         background: var(--green-200);
     }
 }
+
+
+body{
+    font-family: "Karla", sans-serif;
+}
+.contact{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 579px;
+    border-radius: 15px;
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 710px;
+}
+.contact__form > *:not(.form__title){
+margin-bottom: 30px;
+}
+.form__title{
+    margin-bottom: 35px;
+    font-size: 2rem;
+    color:#2a3f3e;
+}
+.flex-row{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.form__label{
+    display:flex;
+    flex-direction: column;
+}
+.form__label span::after{
+    content:"*";
+    color:var(--green-600)
+}
+.form__input{
+    width: 319px;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 1px #0000006e;
+}
+.form__input--email{
+    width:100%;
+}
+.form__input--align-center{
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    gap: .5rem;
+}
+.form__text{
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.form__text--radio{
+    font-size: 1.125rem;
+}

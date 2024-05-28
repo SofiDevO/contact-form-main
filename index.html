@@ -5,34 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Contact form</title>
 </head>
 <body>
     <section class="contact">
-      <h1>Contact Us</h1>
       <form action="" class="contact__form">
-        <label for="name">First Name <span>*</span></label>
-        <input type="text" name="" id="name">
-        <label for="lastName">
-          Last Name <span>*</span>
+        <h1 class="form__title">Contact Us</h1>
+       <div class="flex-row">
+        <label class="form__label" for="name"><span class="form__text">First Name </span>
+          <input class="form__input" type="text" name="" id="name">
         </label>
-        <input type="text" name="lastname" id="Lastname">
-        <label for="">
-          Email Address <span>*</span>
+        <label class="form__label" for="lastName">
+          <span class="form__text">Last Name </span>
+          <input class="form__input" type="text" name="lastName" id="lastName">
         </label>
-        <input type="email" name="email" id="email">
-        <span>Query Type</span>
-        <input type="radio" name="generalQuery" id="generalQuery">
-        <label for="generalQuery">General Enquiry<span>*</span></label>
-        <input type="radio" name="supportQuery" id="supportQuery">
-        <label for="supportQuery">Support Request</label>
-        <label for="message">Message <span>*</span></label>
+       </div>
+        <label class="form__label form__label--email" for="email">
+          <span class="form__text">Email Address </span>
+          <input class="form__input form__input--email" type="email" name="email" id="email">
+        </label>
+
+        <span class="form__label" class="form__text">Query Type</span>
+        <div class="flex-row">
+          <label class="form__input form__input--align-center" for="generalQuery">
+          <input class="" type="radio" name="enqury" id="generalQuery">
+            <span class="form__text--radio">General Enquiry </span>
+          </label>
+          <label class="form__input form__input--align-center" for="supportQuery">
+            <input class="" type="radio" name="enqury" id="supportQuery">
+            <span class="form__text--radio">Support Request</span>
+          </label>
+        </div>
+        <label class="form__label" for="message">
+           <span class="form__text">Message </span></label>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <input type="checkbox" name="consent" id="consent">
-        <label for="consent">I consent to being contacted by the team <span>*</span></label>
-        <input type="submit" value="Submit">
+        <input class="" type="checkbox" name="consent" id="consent">
+        <label class="form__label" for="consent"> <span class="form__text">I consent to being contacted by the team </span></label>
+        <input class="form__input" type="submit" value="Submit">
       </form>
     </section>
   <footer class="attribution">
