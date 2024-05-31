@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
 }
 
 
@@ -81,7 +82,7 @@ body {
     flex-direction: row;
     margin-bottom: 0;
     gap: 7px;
-    padding: 35px 0;
+    padding:9px 0  2px;
 }
 
 
@@ -100,6 +101,9 @@ body {
 }
 
 .color--checked:focus-visible {
+    outline: solid 1px var(--green-600);
+}
+.success-border {
     outline: solid 1px var(--green-600);
 }
 
@@ -174,4 +178,31 @@ body {
   /* Handle on hover */
   .form__message::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+  .form__modal{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    right: 0;
+    padding: 1rem;
+    width: 445px;
+    min-height: 37px;
+    height: 100%;
+    max-height: 98px;
+    transform: translateX(-50%);
+    border: none;
+    background: var(--grey-900);
+    border-radius: 13px;
+    color: white;
+  }
+  .form__modal__title{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .form__modal__message{
+    font-size: 0.625 ;
   }
